@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+  <head>
+
+      <meta charset="utf-8" />
+      <title>Checkout</title>
+
+  </head>
+  <body>
+
+    <header>
+      <img src="./images/hsj_banner.jpg" alt="Hey Say JUMP" class="banner"/>
+      <link href="hsj_styles.css" rel="stylesheet">
+      <script src="Payment.js" async> </script>
+    </header>
+
+      <nav>
+        <ul>
+          <li> <a href="Home.html"> Home </a> </li>
+          <li> <a href="Shows.html"> Shows </a> </li>
+          <li> <a href="Music.html"> Music </a> </li>
+          <li> <a href="Calendar.html"> Calendar </a> </li>
+          <li> <a href="Gallery.html"> Gallery </a> </li>
+          <li> <a href="Store.html"> Store </a> </li>
+        </ul>
+      </nav>
+
+<div id="contain1">
+    <article>
+
+        <h1 id="paid"> Payment </h1>
+
+        <form id="paymentForm" method="post" action="Verification.html">
+
+          <div class="forms">
+              <label for="Fname"> First Name* </label>
+              <input id="Fname" name="name1" type="text" required/>
+          </div>
+
+          <div class="forms">
+              <label for="Lname"> Last Name* </label>
+              <input id="Lname" name="name2" type="text" required/>
+          </div>
+
+          <div class="forms">
+              <label for="addy"> Address* </label>
+              <input id="addy" name="living" type="text" required/>
+          </div>
+
+          <div class="forms">
+              <label for="zip"> Zip Code* </label>
+              <input id="zip" name="code" type="text" required/>
+          </div>
+
+          <div class="forms">
+              <label for="phone"> Phone Number* </label>
+              <input id="phone" name="call" type="text" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required/>
+          </div>
+
+          <div class="forms">
+              <label for="email"> Email* </label>
+              <input id="email" name="mail" type="text" required/>
+          </div>
+          <br>
+
+          <div class="forms">
+
+            <label for="country"> Country/Region </label>
+            <select name="where" id="country">
+              <option value="AUS"> Australia </option>
+              <option value="CAN"> Canada </option>
+              <option value="IND"> Indonesia </option>
+              <option value="JPN"> Japan </option>
+              <option value="MLY"> Malaysia </option>
+              <option value="SK"> South Korea </option>
+              <option value="USA" selected> USA </option>
+            </select>
+
+          </div>
+          <br>
+
+          <div class="forms">
+              <label for="credit"> Credit Card Number* </label>
+              <input id="credit" name="card" type="text" required/>
+          </div>
+
+          <div class="forms">
+            <label for="exp"> Expiration Date* </label>
+            <input type="number" id="exp" name="expire" max="12" min="1" value="1"/>
+            <input type="number" id="exp" name="expire" max="31" min="1" value="1"/>
+          </div>
+
+
+          <div class="forms">
+              <label for="cvc"> CVC* </label>
+              <input id="cvc" name="cNum" type="text" required pattern="^\d{3,4}$"/>
+          </div>
+
+          <br>
+
+          <button type="submit" id="subOrder"> Submit Order </button>
+
+
+        </form>
+
+    </article>
+  </div>
+
+  <div id="contain2">
+
+    <aside id="items">
+
+      <h3 id="cart"> Your Order </h3>
+
+      <form id="lastCart">
+
+        <img src="./images/hsjmerch2.jpg" alt="Calendar" class="smolMerch" align="left"/>
+
+        <input type="text" name="item1" id="item1" class="fields" readonly />
+        x
+        <input type="text" name="item1price" id="item1price" class="fieldss" readonly /> <br/><br><br><br>
+
+        <img src="./images/hsjmerch1.jpg" alt="Photobook" class="smolMerch" align="left"/>
+
+        <input type="text" name="item2" id="item2" class="fields" readonly />
+         x
+        <input type="text" name="item2price" id="item2price" class="fieldss" readonly /> <br/>
+
+      </form>   </br><br><br><br>
+
+
+      <h3 id="cart"> Summary </h3>
+
+      <form id="finalCart">
+
+      <div class="over">
+        <label for="subTotal" class="labler">SUBTOTAL:</label>
+        <input type="text" name="subTotal" id="subTotal" class="displayP" readonly /> </br>
+
+        <label for="salesTax" class="labler">TAX:</label>
+        <input type="text" name="salesTax" id="salesTax" class="displayP" readonly /> </br>
+
+        <label for="ovTotal" class="labler">TOTAL:</label>
+        <input type="text" name="ovTotal" id="ovTotal" class="displayP" readonly />
+      </div>
+
+      </form>
+
+    </aside>
+  </div>
+
+    <footer>
+        2021 &copy; All Rights Reserved. Johnny's & Associates
+    </footer>
+
+  </body>
+</html>

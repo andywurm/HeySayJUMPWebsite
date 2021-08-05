@@ -1,0 +1,35 @@
+"use strict";
+
+var events = new Array();
+
+events[1] = "<br/><br/><span class='eventNames'> Mezamashi TV </span> <br/> <span class='eventTimes'>(5:25 JST)</span>";
+events[2] = "";
+events[3] = "<br/><br/><span class='eventNames'> Itadaki High Jump </span><br/><span class='eventTimes'>(10:25 JST)</span><br/> <span class='eventNames'> Music Day </span><br/> <span class='eventTimes'>(15:00 JST)</span>";
+events[4] = "<br/><br/><span class='eventNames'> School Kakumei </span><br/> <span class='eventTimes'>(11:45 JST)</span>";
+events[5] = "";
+events[6] = "<br/><br/><span class='eventNames'> Hirunandesu </span><br/> <span class='eventTimes'>(11:55 JST)</span>";
+events[7] = "";
+events[8] = "<br/><br/><span class='eventNames'> Mezamashi TV </span> <br/> <span class='eventTimes'>(5:25 JST)</span>";
+events[9] = "";
+events[10] = "<br/><br/><span class='eventNames'> Itadaki High Jump </span><br/> <span class='eventTimes'>(10:25 JST)</span>";
+events[11] = "<br/><br/><span class='eventNames'> School Kakumei </span><br/> <span class='eventTimes'>(11:45 JST)</span><br/> <span class='eventNames'> Soccer w/ Chinen </span><br/> <span class='eventTimes'>(21:00 JST)</span>";
+events[12] = "";
+events[13] = "<br/><br/><span class='eventNames'> Hirunandesu </span><br/> <span class='eventTimes'>(11:55 JST)</span>";
+events[14] = "";
+events[15] = "<br/><br/><span class='eventNames'> Mezamashi TV </span> <br/> <span class='eventTimes'>(5:25 JST)</span>";
+events[16] = "";
+events[17] = "<br/><br/><span class='eventNames'> Itadaki High Jump </span><br/> <span class='eventTimes'>(10:25 JST)</span>";
+events[18] = "<br/><br/><span class='eventNames'> School Kakumei </span><br/> <span class='eventTimes'>(11:45 JST)</span>";
+events[19] = "";
+events[20] = "<br/><br/><span class='eventNames'> Hirunandesu </span><br/> <span class='eventTimes'>(11:55 JST)</span>";
+events[21] = "";
+events[22] = "<br/><br/><span class='eventNames'> Mezamashi TV </span> <br/> <span class='eventTimes'>(5:25 JST)</span>";
+events[23] = "<br/><br/> <span class='eventNames'> Tokoro-san w/ Takaki </span><br/> <span class='eventTimes'>(19:30 JST)</span>";
+events[24] = "<br/><br/><span class='eventNames'> Itadaki High Jump </span><br/> <span class='eventTimes'>(10:25 JST)</span>";
+events[25] = "<br/><br/><span class='eventNames'> School Kakumei </span><br/> <span class='eventTimes'>(11:45 JST)</span>";
+events[26] = "";
+events[27] = "<br/><br/><span class='eventNames'> Hirunandesu </span><br/> <span class='eventTimes'>(11:55 JST)</span>";
+events[28] = "";
+events[29] = "<br/><br/><span class='eventNames'> Mezamashi TV </span><br/> <span class='eventTimes'>(5:25 JST)</span>";
+events[30] = "";
+events[31] = "<br/><br/><span class='eventNames'> Itadaki High Jump </span><br/> <span class='eventTimes'>(10:25 JST)</span>";

@@ -1,0 +1,703 @@
+@charset "utf-8";
+@font-face {
+  font-family: century-gothic;
+  src: url('CenturyGothic.ttf') format('truetype');
+
+}
+
+/* Constant Styles */
+
+html{
+
+  background-color: rgb(252, 252, 252);
+
+}
+body{
+
+    font-family: century-gothic, Verdana, sans-serif;
+    color: rgb(41, 41, 41);
+
+}
+img.banner{
+
+  border-radius: 20px;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+  max-height: 300px;
+
+}
+nav ul{
+
+  text-align: center;
+  line-height: 2em;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+nav li {
+
+  font-size: 1.2em;
+  display:inline;
+  text-decoration: none;
+  border: solid;
+  border-radius: 1.5px;
+  border-style: hidden;
+  border-width: thin;
+
+}
+nav li a {
+
+  padding: 0 50px;
+
+}
+nav > ul > li > a:link, nav > ul > li > a:visited{
+
+  color: rgb(41, 41, 41);
+  text-decoration: none;
+
+}
+nav > ul > li > a:hover, nav > ul > li > a:active {
+
+    font-size: 1.1em;
+    color: rgb(105, 101, 96);
+    text-decoration: underline;
+    transition: 200ms linear;
+
+}
+
+/* Home Styles */
+
+img.members {
+
+  display: block;
+  max-width: 250px;
+  max-height: 300px;
+  padding: 5px;
+  border-radius: 15px;
+
+}
+h1{
+
+  font-size: 3em;
+  font-weight: bold;
+  margin-left: 25px;
+
+}
+h2 {
+
+  text-indent: 10px;
+  background-color: rgb(217, 215, 212);
+  font-size: 2.1em;
+  font-weight: bold;
+  margin-left: 20px;
+  border-radius: 8px;
+  max-width: 72%
+
+}
+h3 {
+
+  background-color: rgb(217, 215, 212);
+  border-radius: 6px;
+
+}
+p.first {
+
+  text-indent: 30px;
+
+}
+article > table {
+
+  float: left;
+  font-size: 1.2em;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+
+}
+.names{
+  font-family: 'Tahoma', Verdana;
+}
+.names > a:link, .names > a:visited{
+
+  color: rgb(41, 41, 41);
+  text-decoration: none;
+
+}
+.names > a:hover, .names > a:active {
+
+    font-size: 1.1em;
+    color: rgb(105, 101, 96);
+    text-decoration: underline;
+
+}
+body > aside {
+
+  float: right;
+  width: 20%;
+	margin: 0 2% 0 0;
+
+  text-align: center;
+  line-height: 1.5em;
+
+}
+.links {
+
+  margin-right: 35px;
+  text-align: center;
+  text-decoration: underline;
+  list-style: inside;
+  list-style-image: url("./images/star.png");
+  margin-top: 10px;
+
+}
+.links > a:link, .links > a:visited{
+
+  color: rgb(41, 41, 41);
+  text-decoration: none;
+
+}
+.links > a:hover, .links > a:active {
+
+    font-size: 1.1em;
+    color: rgb(105, 101, 96);
+    text-decoration: underline;
+    transition: 200ms linear;
+
+}
+
+/* Music Styles */
+
+img.covers {
+
+  margin-top: 50px;
+  display: block;
+  max-width: 275px;
+  max-height: 275px;
+  padding: 5px;
+  border-radius: 15px;
+  border: outset;
+
+}
+aside.mus{
+
+  float:left;
+  margin-left: 15px;
+  margin-bottom: 26px;
+
+
+}
+
+h4 {
+
+  text-align: center;
+  line-height: .5px;
+
+}
+h2.tabs {
+
+  text-indent: 10px;
+  background-color: rgb(217, 215, 212);
+  font-size: 2.4em;
+  font-weight: bold;
+  margin-left: 20px;
+  border-radius: 8px;
+  max-width: 97%;
+
+}
+.shead{
+
+  font-weight: bolder;
+  background-color: rgb(217, 215, 212);
+  color: rgb(0,0,0);
+
+}
+table.albums{
+
+  border-color: rgb(0,0,0);
+  margin-top: 20px;
+  float: right;
+  font-size: 1.01em;
+  text-align: center;
+  margin-left: auto;
+  margin-right: 30px;;
+  width: 70%;
+  border-collapse: collapse;
+  margin-bottom: 50px;
+
+}
+
+/* Shows Styles */
+
+h2.about {
+
+    font-size: 2em;
+    background-color: inherit;
+    font-weight: bold;
+
+}
+h3.jpn {
+
+  font-size: 1.1em;
+  background-color: inherit;
+  text-indent: 70px;
+  line-height: 1px;
+
+}
+p {
+  text-indent: 30px;
+  color: rgb(10,10,10);
+  font-size: 1em;
+}
+p.des {
+
+  line-height: 50px;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  font-size: 1.01em;
+  margin-bottom: 20px;
+  color: rgb(10,10,10);
+
+}
+img.show{
+
+  margin-top: 20px;
+  display: block;
+  max-width: 300px;
+  max-height: 300px;
+  padding: 5px;
+  border-radius: 15px;
+  margin-left: 20px;
+  border-style: outset;
+  background-color: rgb(217, 215, 212);
+
+}
+.appear{
+
+  font-weight: bolder;
+  font-size: 1.1em;
+
+}
+.btn {
+
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(143, 186, 207);
+  padding: 15px 28px;
+  font-size: 1em;
+  display: inline-block;
+  margin-left: 83px;
+  margin-bottom: 20px;
+
+}
+.btn > a:link, .btn > a:visited{
+
+  color: rgb(41, 41, 41);
+  text-decoration: none;
+
+}
+.btn > a:hover, .btn > a:active {
+
+    font-size: 1.1em;
+    color: rgb(52, 84, 99);
+    transition: 250ms;
+
+}
+
+/* Calendar Styles */
+
+#calTable {
+
+  width: 90%;
+  text-align: left;
+  margin: auto;
+  border: 2px solid rgb(110, 110, 105);
+  border-radius: 3px;
+  padding: 5px;
+  height: 500px;
+  margin-bottom: 40px;
+
+}
+#topOfCal {
+
+  font-size: 2.7em;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: "Lucida Console", monospace;
+
+}
+.weekdays {
+
+  border: 2px solid rgb(104, 105, 107);
+  width: 12%;
+  height: 50px;
+  text-align: center;
+  margin: 0;
+  background-color: rgb(217, 215, 212);
+  font-family: Verdana, sans-serif;
+  font-weight: normal;
+
+
+}
+.eventDays {
+
+  border: 1.7px solid rgb(110, 110, 105);
+  text-indent: 10px;
+  font-weight: bolder;
+  height: 120px;
+  vertical-align: top;
+
+}
+.eventNames{
+
+  font-size: .9em;
+  margin: auto;
+
+}
+.eventTimes {
+
+  font-size: .7em;
+
+}
+#highlighted{
+
+  border: 2px solid rgb(240, 125, 125);
+  background-color: rgb(255, 190, 181);
+
+}
+/* Gallery Styles */
+
+* {box-sizing:border-box}
+
+div.gallery {
+
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+  align-content: center;
+
+}
+
+.slides {
+
+  display: none;
+
+}
+
+.column {
+
+  float: left;
+  width: 10%;
+  padding: 5px;
+  padding-top: 15px;
+
+}
+
+.nextup {
+  opacity: 0.5;
+  max-height: 100px;
+  border-radius: 4px;
+}
+div.gal {
+
+  background: black;
+  border: solid black;
+  border-radius: 8px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+img.slideimg {
+
+  max-width: 700px;
+  max-height: 700px;
+  border-radius: 5px;
+
+
+}
+
+/* Store Styles */
+
+ h1#paid {
+
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-left: 25px;
+  background-color: rgb(217, 215, 212);
+  border-radius: 8px;
+  max-width: 95%;
+  text-indent: 10px;
+
+}
+article aside#items {
+
+  float: right;
+  width: 27%;
+
+  text-align: center;
+  line-height: 1em;
+
+}
+h3#cart {
+
+  background-color: rgb(217, 215, 212);
+  border-radius: 6px;
+  line-height: 1.2em;
+  font-size: 1.4em;
+  margin-top: auto;
+  text-align: center;
+  width: 90%;
+
+}
+#contain1 {
+
+  float: left;
+  width: 70%;
+
+}
+#contain2 {
+
+  float: right;
+  width: 30%;
+  margin-top: 35px;
+
+}
+label {
+
+   display: inline-block;
+   width: 200px;
+   margin-bottom: 10px;
+
+}
+form{
+  margin-top: 50px;
+
+}
+.forms {
+
+margin: auto;
+margin-left: 100px;
+
+}
+input{
+  width: 200px;
+}
+input#exp {
+  width: 40px;
+}
+input#cvc {
+  width: 50px;
+}
+button#subOrder {
+
+  display: inline-block;
+  width: 150px;
+  height: 30px;
+  margin-top: 40px;
+  margin-left: 300px;
+  margin-bottom: 50px;
+  font-family: century-gothic, Verdana;
+
+}
+input:invalid, input:focus:invalid, select:invalid, select:focus:invalid {
+
+   outline: none;
+   background-color: rgba(255, 204, 215,0.4);
+
+ }
+input:valid, input:focus:valid, select:valid, select:focus:valid {
+
+   outline: none;
+   background-color: none;
+
+}
+#storeAside {
+
+  font-size: .95em;
+
+}
+#container1 {
+
+  float: left;
+  width: 70%;
+
+}
+#container2 {
+
+  float: right;
+  width: 30%;
+
+}
+#shopCart {
+
+  margin-left: 30px;
+  background-color: rgb(217, 215, 212);
+  border-radius: 8px;
+  max-width: 80%;
+  text-align: center;
+
+}
+.merch {
+
+  margin-left: 25px;
+  background-color: rgb(217, 215, 212);
+  border-radius: 8px;
+  max-width: 95%;
+  text-indent: 10px;
+
+}
+.merchPics {
+
+  max-height: 250px;
+  max-width: 350px;
+  margin-left: 200px;
+  display: inline-block;
+  margin-left: 50px;
+  margin: 0 15px 0 50px;
+  border: 3px outset;
+  border-radius: 4px;
+
+
+}
+input#qty {
+
+  width: 50px;
+
+ }
+ .qtys{
+
+   display: inline;
+   margin-left: 50px;
+
+ }
+ p.MerchPrice{
+
+   font-weight: bolder;
+   margin-left: 22px;
+
+ }
+ #checkButton{
+
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 7px;
+   width: 140px;
+   margin-top: 30px;
+
+ }
+ .displayP {
+
+   margin-left: auto;
+   margin-right: auto;
+   border: none;
+   background-color: inherit;
+   width: 70px;
+   display: inline-block;
+
+ }
+ #salesTax, #subTotal, #ovTotal {
+
+   margin-bottom: 10px;
+
+ }
+form#totalss {
+
+  align-items: center;
+
+}
+.smolMerch {
+
+  max-width: 100px;
+  max-height: 90px;
+  margin-left: 15px;
+  border-radius: 5px;
+  margin: 0 5px 0 15px;
+
+}
+.fieldss{
+
+  width: 20px;
+  border: none;
+  background-color: inherit;
+  margin-top: 40px;
+
+}
+.fields{
+
+  width: 180px;
+  border: none;
+  background-color: inherit;
+
+}
+#finalCart {
+
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
+}
+.labler{
+
+  display: inline-block;
+  width: 100px;
+  margin-left: 20px;
+
+}
+.over{
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+
+}
+form#cart1, form#cart2 {
+
+  margin-top: 30px;
+
+}
+p#move{
+
+  margin-right: 80px;
+
+}
+p#des{
+
+  font-weight: bolder;
+
+}
+label.log {
+
+  width: 80px;
+  margin-left: 20px;
+
+}
+input.logg {
+
+  width: 150px;
+
+}
+input.loggbut {
+
+  width: 100px;
+  margin-left: 20px;
+
+}
+/* Footer Styles */
+
+footer {
+
+  text-align: center;
+  font-size: 1em;
+	margin-top: 1%;
+  clear: both;
+  padding-top: 10px;
+	padding-bottom: 3px;
+
+}
