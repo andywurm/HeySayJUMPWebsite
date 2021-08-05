@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+  <head>
+
+      <meta charset="utf-8" />
+      <title>Store</title>
+
+  </head>
+  <body>
+
+
+        <header>
+          <img src="./images/hsj_banner.jpg" alt="Hey Say JUMP" class="banner"/>
+          <link href="hsj_styles.css" rel="stylesheet">
+          <script src="Store.js" defer></script>
+        </header>
+
+          <nav>
+            <ul>
+              <li> <a href="Home.html"> Home </a> </li>
+              <li> <a href="Shows.html"> Shows </a> </li>
+              <li> <a href="Music.html"> Music </a> </li>
+              <li> <a href="Calendar.html"> Calendar </a> </li>
+              <li> <a href="Gallery.html"> Gallery </a> </li>
+              <li> <a href="Store.html"> Store </a> </li>
+            </ul>
+          </nav>
+
+          <article>
+
+            <h2 class="tabs"> Shop </h2>
+            <section id="loginn">
+               <form id="loginForm">
+                  <label for="username" class="log">Username</label>
+                  <input id="username" name="user" type="text" class="logg"/>
+                  <label for="password" class="log">Password</label>
+                  <input type="password" id="password" name="pwd" class="logg"/>
+                  <input id="login" type="button" value="Login" class="loggbut" onclick="onSubmit()"/>
+               </form>
+            </section>
+
+          </article>
+
+
+          <div id="container1">
+
+            <h2 class="merch"> Fab! ~Live speaks.~ </h2>
+
+
+            <section id="item1">
+
+              <img src="./images/hsjmerch2.jpg" alt="Live DVD" class="merchPics" align="left"/>
+
+              <br>
+              <p id="des"> Description: </p>
+              <p id="move"> Watch the Fab! ~Live speaks.~ concert in the comfort of your own home. This was filmed
+              in April of 2021 and features all your favorite members including ex member Okamoto Keito! Click down below
+              to buy now and experience the magic. </p>
+
+              <form id="cart1" name="cart1" action="Payment.html" method="get">
+
+                <input type="hidden" name="item1Cost" id="item1Cost" value="30.00"/>
+                <input type="hidden" name="item1Name" id="item1Name" value="Fab! ~Live speaks.~ ($30.00)"/>
+
+                <p class="MerchPrice">Price: $30.00 </p>
+
+                <label for="qty" class="qtys"> Qty </label> &nbsp;
+                <select name="qty" id="quant">
+                  <option value="0" selected>0</option><option value="1">1</option>
+                  <option value="2">2</option><option value="3">3</option>
+                  <option value="4">4</option><option value="5">5</option>
+                </select>
+
+              </form>
+
+            </section>
+
+            <br>
+            <br>
+
+            <h2 class="merch"> Photobook Calendar </h2>
+
+            <section id="item2">
+
+              <img src="./images/hsjmerch1.jpg" alt="Calendar" class="merchPics" align="left"/>
+
+              <br>
+              <p id="des"> Description: </p>
+              <p id="move"> Keep track of your personal events while looking at the faces of all your favorite members.
+              This calendar runs from 2021 to 2022. Click down below to buy your very own calendar now.  </p>
+
+              <form id="cart2" name="cart2" action="Payment.html" method="get">
+
+                <input type="hidden" name="item2Cost" id="item2Cost" value="19.99"/>
+                <input type="hidden" name="item2Name" id="item2Name" value="Photobook Calendar ($19.99)"/>
+                <input type="hidden" name="subTot" id="subTot"/>
+                <input type="hidden" name="salTax" id="salTax"/>
+                <input type="hidden" name="theTot" id="theTot"/>
+                <input type="hidden" name="item1Cost" id="item1Cost" value="30.00"/>
+                <input type="hidden" name="item1Name" id="item1Name" value="Fab! ~Live speaks.~ ($30.00)"/>
+                <input type="hidden" name="item1qty" id="item1qty"/>
+
+                <p class="MerchPrice">Price: $19.99 </p>
+
+                <label for="qty" class="qtys"> Qty </label> &nbsp;
+                <select name="qty" id="quanti">
+                   <option value="0" selected>0</option><option value="1">1</option>
+                   <option value="2">2</option><option value="3">3</option>
+                   <option value="4">4</option><option value="5">5</option>
+                </select>
+
+              </form>
+
+            </section>
+
+            <br>
+            <br>
+            <br>
+
+          </div>
+
+
+
+            <div id="container2">
+
+              <aside id="storeAside">
+
+                <h2 id="shopCart"> Shopping Cart </h2>
+
+                <form id="totalss" name="totalss" >
+
+                  <div class="over">
+                    <label for="subTotal" class="labler"> SUBTOTAL: </label>
+                    <input type="text" name="subTotal" id="subTotal"  class="displayP" readonly /> <br/>
+                    <label for="subTotal" class="labler"> TAX: </label>
+                    <input type="text" name="salesTax" id="salesTax"  class="displayP" readonly /> <br/>
+                    <label for="subTotal" class="labler"> TOTAL:</label>
+                    <input type="text" name="ovTotal" id="ovTotal"  class="displayP" readonly /> <br/>
+                  </div>
+
+                <input id="checkButton" type="button" value="Checkout" onclick="submitForms()"/>
+
+              </form>
+
+              </aside>
+
+          </div>
+
+          <script>
+
+          submitForms = function(){
+                                    document.getElementById("cart1").submit();
+                                    document.getElementById("cart2").submit();
+                                  }
+
+          function onSubmit() {
+
+            const usernameInput = document.getElementById("username");
+
+            const loginCont = document.getElementById("loginn");
+
+            loginCont.innerHTML = "&nbsp; &nbsp; &nbsp; Welcome, " + usernameInput.value + "!";
+
+            console.log(usernameInput.value);
+
+          }
+
+          </script>
+
+
+    <footer>
+        2021 &copy; All Rights Reserved. Johnny's & Associates
+    </footer>
+
+  </body>
+</html>

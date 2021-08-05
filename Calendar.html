@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+  <head>
+
+      <meta charset="utf-8" />
+      <title>Calendar</title>
+
+  </head>
+  <body>
+
+
+        <header>
+          <img src="./images/hsj_banner.jpg" alt="Hey Say JUMP" class="banner"/>
+          <link href="hsj_styles.css" rel="stylesheet">
+          <script src="Events.js"></script>
+        </header>
+
+          <nav>
+            <ul>
+              <li> <a href="Home.html"> Home </a> </li>
+              <li> <a href="Shows.html"> Shows </a> </li>
+              <li> <a href="Music.html"> Music </a> </li>
+              <li> <a href="Calendar.html"> Calendar </a> </li>
+              <li> <a href="Gallery.html"> Gallery </a> </li>
+              <li> <a href="Store.html"> Store </a> </li>
+            </ul>
+          </nav>
+
+          <article>
+
+            <h2 class="tabs"> Upcoming Events </h2>
+
+          </article>
+
+          <div id="hsjCalendar"> </div>
+
+          <script defer>
+
+          var today = new Date();
+
+          document.getElementById("hsjCalendar").innerHTML = newCal(today);
+
+          function newCal (theDate) {
+
+            var insideHTML = "<table id='calTable'>";
+            insideHTML += calHeader(theDate);
+            insideHTML += daysOfTheWeek();
+            insideHTML += rows(theDate);
+            insideHTML += "</table>";
+
+            return insideHTML;
+
+          }
+
+          function calHeader (theDate) {
+
+            var nameOfMonth = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+            var currentMonth = theDate.getMonth();
+            var currentYear = theDate.getFullYear();
+
+            return "<caption id='topOfCal'>" + nameOfMonth[currentMonth] + " " + currentYear + "</caption>";
+
+          }
+
+          function daysOfTheWeek() {
+
+            var weekdays = ["SUN","MON","TUE","WED","THU","FRI","SAT"];
+            var weekdaysHTML = "<tr>";
+
+            for(var i = 0; i < weekdays.length; i++) {
+
+          		weekdaysHTML += "<th class='weekdays'>" + weekdays[i] + "</th>";
+
+          	}
+
+            weekdaysHTML += "</tr>";
+
+            return weekdaysHTML;
+
+          }
+
+          function daysInAMonth(theDate) {
+
+            var numOfDays = [31,28,31,30,31,30,31,31,30,31,30,31];
+          	var theYear = theDate.getFullYear();
+          	var theMonth = theDate.getMonth();
+
+            if(theYear%4 === 0) {
+          		if(theYear%100 != 0 || theYear%400 === 0) {
+
+          			numOfDays[1] = 29;
+
+          		}
+          	}
+
+            return numOfDays[theMonth]+1;
+
+          }
+
+          function rows (theDate) {
+
+            var day = new Date(theDate.getFullYear(), theDate.getMonth(), 1);
+          	var dayOfweek = day.getDay();
+
+            var rowHTML = "<tr>";
+
+            for(var i = 0; i < dayOfweek; i++) {
+
+          		rowHTML += "<td></td>";
+
+          	}
+
+            var monthDays = daysInAMonth(theDate);
+
+          	var highlighted = theDate.getDate();
+
+            for (var i = 1; i < monthDays; i++){
+
+              day.setDate(i);
+          		dayOfweek = day.getDay();
+
+          		if(dayOfweek === 0) {
+
+          			rowHTML += "<tr>";
+
+          		}
+
+              if(i === highlighted){
+
+                rowHTML += "<td class='eventDays' id='highlighted'>" + i  +  events[i] +"</td>";
+
+              }
+              else{
+
+                rowHTML += "<td class='eventDays'>" + i + events[i] + "</td>";
+
+              }
+
+                if(dayOfweek === 6) {
+
+            			rowHTML += "</tr>";
+
+            		}
+
+          		}
+
+              return rowHTML;
+
+            }
+
+
+
+          </script>
+
+
+    <footer>
+        2021 &copy; All Rights Reserved. Johnny's Associates
+    </footer>
+
+  </body>
+</html>
