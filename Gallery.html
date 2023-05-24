@@ -1,154 +1,162 @@
 <!doctype html>
 <html>
-  <head>
 
-      <meta charset="utf-8" />
-      <title>Gallery</title>
+<head>
 
-  </head>
-  <body>
+  <meta charset="utf-8" />
+  <title>Gallery</title>
+
+</head>
+
+<body>
 
 
-        <header>
-          <img src="./images/hsj_banner.jpg" alt="Hey Say JUMP" class="banner"/>
-          <link href="hsj_styles.css" rel="stylesheet">
-        </header>
+  <header>
+    <!-- <img src="./images/hsj_banner.jpg" alt="Hey Say JUMP" class="banner"/> -->
+    <link href="hsj_styles.css" rel="stylesheet">
+  </header>
+  <br/>
+  <nav class="navbar">
+    <ul>
+      <li class="navItem"> <a href="Home.html"> Home </a> </li>
+      <!-- <li> <a href="Shows.html"> Shows </a> </li> -->
+      <li class="navItem"> <a href="Music.html"> Music </a> </li>
+      <li class="navItem"> <a href="Calendar.html"> Calendar </a> </li>
+      <li class="navItem"> <a href="Gallery.html"> Gallery </a> </li>
+      <li class="navItem"> <a href="Store.html"> Store </a> </li>
+    </ul>
+  </nav>
 
-          <nav>
-            <ul>
-              <li> <a href="Home.html"> Home </a> </li>
-              <li> <a href="Shows.html"> Shows </a> </li>
-              <li> <a href="Music.html"> Music </a> </li>
-              <li> <a href="Calendar.html"> Calendar </a> </li>
-              <li> <a href="Gallery.html"> Gallery </a> </li>
-              <li> <a href="Store.html"> Store </a> </li>
-            </ul>
-          </nav>
+  <div style="height: 80vh">
+    <div class="gal" style="margin-top: 3%;">
+      <br />
+      <div class="gallery">
 
-  <article>
-
-    <h2 class="tabs"> Photos </h2>
-
-  </article>
-
-  <div class="gal">
-          <br/>
-          <div class="gallery">
-
-            <div class="slides">
-              <img class="slideimg" src="./images/hsjgallery3.jpg" style="width:100%">
-            </div>
-
-            <div class="slides">
-              <img class="slideimg" src="./images/hsjgallery2.jpg" style="width:100%">
-            </div>
-            <div class="slides">
-              <img class="slideimg" src="./images/hsjgallery.jpg" style="width:100%">
-            </div>
-
-            <div class="slides">
-              <img class="slideimg" src="./images/hsjgallery4.jpg" style="width:100%">
-            </div>
-
-            <div class="slides">
-              <img class="slideimg" src="./images/hsjgallery5.jpg" style="width:100%">
-            </div>
-
-            <div class="slides">
-              <img class="slideimg" src="./images/hsjgallery6.jpg" style="width:100%">
-            </div>
-
-            <div class="slides">
-              <img class="slideimg" src="./images/hsjgallery7.jpg" style="width:100%">
-            </div>
-
-            <div class="slides">
-              <img class="slideimg" src="./images/hsjgallery8.jpg" style="width:100%">
-            </div>
-
-            <div class="slides">
-              <img class="slideimg" src="./images/hsjgallery9.jpg" style="width:100%">
-            </div>
-
-            <div class="slides">
-              <img class="slideimg" src="./images/hsjgallery10.jpg" style="width:100%">
-            </div>
-
-          </div>
-          <br>
+        <div class="slides">
+          <img class="slideimg" src="./images/hsjgallery3.jpg" style="width:100%">
         </div>
 
-        <br>
-      <div class="row">
+        <div class="slides">
+          <img class="slideimg" src="./images/hsjgallery2.jpg" style="width:100%">
+        </div>
+        <div class="slides">
+          <img class="slideimg" src="./images/hsjgallery.jpg" style="width:100%">
+        </div>
 
-        <div class="column">
-          <img class="nextup" src="./images/hsjgallery3.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+        <div class="slides">
+          <img class="slideimg" src="./images/hsjgallery4.jpg" style="width:100%">
         </div>
-        <div class="column">
-          <img class="nextup" src="./images/hsjgallery2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+
+        <div class="slides">
+          <img class="slideimg" src="./images/hsjgallery5.jpg" style="width:100%">
         </div>
-        <div class="column">
-          <img class="nextup" src="./images/hsjgallery.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+
+        <div class="slides">
+          <img class="slideimg" src="./images/hsjgallery6.jpg" style="width:100%">
         </div>
-        <div class="column">
-          <img class="nextup" src="./images/hsjgallery4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+
+        <div class="slides">
+          <img class="slideimg" src="./images/hsjgallery7.jpg" style="width:100%">
         </div>
-        <div class="column">
-          <img class="nextup" src="./images/hsjgallery5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+
+        <div class="slides">
+          <img class="slideimg" src="./images/hsjgallery8.jpg" style="width:100%">
         </div>
-        <div class="column">
-          <img class="nextup" src="./images/hsjgallery6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+
+        <div class="slides">
+          <img class="slideimg" src="./images/hsjgallery9.jpg" style="width:100%">
         </div>
-        <div class="column">
-          <img class="nextup" src="./images/hsjgallery7.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
-        </div>
-        <div class="column">
-          <img class="nextup" src="./images/hsjgallery8.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-        </div>
-        <div class="column">
-          <img class="nextup" src="./images/hsjgallery9.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-        </div>
-        <div class="column">
-          <img class="nextup" src="./images/hsjgallery10.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+
+        <div class="slides">
+          <img class="slideimg" src="./images/hsjgallery10.jpg" style="width:100%">
         </div>
 
       </div>
+      <br>
+    </div>
 
-      <script defer>
+    <br>
+    <div class="row smImgs">
 
-      "use strict";
+      <div class="column">
+        <img class="nextup" src="./images/hsjgallery3.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+      </div>
+      <div class="column">
+        <img class="nextup" src="./images/hsjgallery2.jpg" style="width:100%" onclick="currentSlide(2)"
+          alt="Cinque Terre">
+      </div>
+      <div class="column">
+        <img class="nextup" src="./images/hsjgallery.jpg" style="width:100%" onclick="currentSlide(3)"
+          alt="Mountains and fjords">
+      </div>
+      <div class="column">
+        <img class="nextup" src="./images/hsjgallery4.jpg" style="width:100%" onclick="currentSlide(4)"
+          alt="Northern Lights">
+      </div>
+      <div class="column">
+        <img class="nextup" src="./images/hsjgallery5.jpg" style="width:100%" onclick="currentSlide(5)"
+          alt="Nature and sunrise">
+      </div>
+      <div class="column">
+        <img class="nextup" src="./images/hsjgallery6.jpg" style="width:100%" onclick="currentSlide(6)"
+          alt="Snowy Mountains">
+      </div>
+      <div class="column">
+        <img class="nextup" src="./images/hsjgallery7.jpg" style="width:100%" onclick="currentSlide(2)"
+          alt="Cinque Terre">
+      </div>
+      <div class="column">
+        <img class="nextup" src="./images/hsjgallery8.jpg" style="width:100%" onclick="currentSlide(3)"
+          alt="Mountains and fjords">
+      </div>
+      <div class="column">
+        <img class="nextup" src="./images/hsjgallery9.jpg" style="width:100%" onclick="currentSlide(4)"
+          alt="Northern Lights">
+      </div>
+      <div class="column">
+        <img class="nextup" src="./images/hsjgallery10.jpg" style="width:100%" onclick="currentSlide(5)"
+          alt="Nature and sunrise">
+      </div>
 
-      var slideIndex = 0;
-      showSlides();
+    </div>
+  </div>
 
-      function showSlides() {
+  <script defer>
 
-        var slides = document.getElementsByClassName("slides");
-        var next = document.getElementsByClassName("nextup");
+    "use strict";
 
-        for (var i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-          next[i].style.opacity = "0.5";
-        }
+    var slideIndex = 0;
+    showSlides();
 
-        slideIndex++;
+    function showSlides() {
 
-        if (slideIndex > slides.length) {
-          slideIndex = 1
-        }
+      var slides = document.getElementsByClassName("slides");
+      var next = document.getElementsByClassName("nextup");
 
-        slides[slideIndex-1].style.display = "block";
-        next[slideIndex-1].style.opacity = "1";
-        setTimeout(showSlides, 500);
-
+      for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        next[i].style.opacity = "0.5";
       }
 
-      </script>
+      slideIndex++;
+
+      if (slideIndex > slides.length) {
+        slideIndex = 1
+      }
+
+      slides[slideIndex - 1].style.display = "block";
+      next[slideIndex - 1].style.opacity = "1";
+      setTimeout(showSlides, 1000);
+
+    }
+
+  </script>
 
 
-    <footer>
-        2021 &copy; All Rights Reserved. Johnny's Associates
-    </footer>
+  <footer>
+    2021 &copy; All Rights Reserved. Johnny's Associates
+  </footer>
 
-  </body>
+</body>
+
 </html>

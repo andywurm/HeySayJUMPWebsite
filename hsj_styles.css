@@ -18,27 +18,72 @@ body{
     color: rgb(41, 41, 41);
 
 }
-img.banner{
 
-  border-radius: 20px;
+.bannerContainer{
+  /* border: solid red 1px; */
+  width: 100%;
+}
+
+.banner{
+
+  border-radius: 10px;
   display:block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 90%;
-  max-height: 300px;
+  margin: 0 auto;
+  width: 70%;
+  height: 5%;
+  /* border: solid red 1px; */
 
 }
-nav ul{
 
+.navbar{
+  /* border: solid red 1px; */
+}
+
+.brand{
+  font-weight: bolder;
+  font-style: italic;
+  color: black;
+  font-size: 1.5em;
+  position: relative;
+  top: 1px
+}
+
+.intro{
+  height: 85vh;
+  width: 100%;
+  /* border: solid red 1px; */
+}
+
+.hsjName{
+  font-size: 4.5em;
+  font-weight: bolder;
+  position: relative;
+  top: 40px;
+  font-style: italic;
+}
+
+.group{
+  text-align: right;
+  /* border: solid red 1px; */
+}
+
+.grpPic{
+  height: 100%;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  /* border: solid red 1px; */
+}
+
+nav ul{
   text-align: center;
   line-height: 2em;
   list-style: none;
   padding: 0;
   margin: 0;
-
 }
-nav li {
 
+nav li {
   font-size: 1.2em;
   display:inline;
   text-decoration: none;
@@ -46,38 +91,37 @@ nav li {
   border-radius: 1.5px;
   border-style: hidden;
   border-width: thin;
-
 }
 nav li a {
-
   padding: 0 50px;
-
 }
-nav > ul > li > a:link, nav > ul > li > a:visited{
 
+nav > ul > li > a:link, nav > ul > li > a:visited{
   color: rgb(41, 41, 41);
   text-decoration: none;
-
 }
 nav > ul > li > a:hover, nav > ul > li > a:active {
-
-    font-size: 1.1em;
     color: rgb(105, 101, 96);
     text-decoration: underline;
     transition: 200ms linear;
-
 }
+
 
 /* Home Styles */
 
-img.members {
+.homeContainer{
+  /* border: solid red 1px; */
+  width: 75%;
+  margin: 0 auto;
+}
 
+.members {
   display: block;
   max-width: 250px;
   max-height: 300px;
-  padding: 5px;
-  border-radius: 15px;
-
+  margin: 2px;
+  border-radius: 5px;
+  border: solid rgb(197, 189, 200) 1px;
 }
 h1{
 
@@ -120,6 +164,9 @@ article > table {
 }
 .names{
   font-family: 'Tahoma', Verdana;
+  /* border: solid red 1px; */
+  text-align: center;
+  padding: 10px 0;
 }
 .names > a:link, .names > a:visited{
 
@@ -127,13 +174,22 @@ article > table {
   text-decoration: none;
 
 }
-.names > a:hover, .names > a:active {
+
+.members:hover{
+  transform: scale(1.02);
+}
+
+.tableCards{
+    /* border: solid red 1px; */
+    margin: 0 auto;
+}
+/* .names > a:hover, .names > a:active {
 
     font-size: 1.1em;
     color: rgb(105, 101, 96);
     text-decoration: underline;
 
-}
+} */
 body > aside {
 
   float: right;
@@ -376,17 +432,21 @@ img.show{
 
 div.gallery {
 
-  max-width: 700px;
+  width: 700px;
   position: relative;
   margin: auto;
-  align-content: center;
+  display: flex;
+  align-items: center;
+  height: 500px;
 
 }
 
 .slides {
-
   display: none;
-
+  /* border: solid red 1px; */
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .column {
@@ -395,6 +455,8 @@ div.gallery {
   width: 10%;
   padding: 5px;
   padding-top: 15px;
+  display: flex;
+  align-items: center;
 
 }
 
@@ -402,23 +464,29 @@ div.gallery {
   opacity: 0.5;
   max-height: 100px;
   border-radius: 4px;
+  /* border: solid red 1px; */
 }
+
 div.gal {
 
   background: black;
   border: solid black;
   border-radius: 8px;
-  margin-left: 20px;
-  margin-right: 20px;
+  width: 75%;
+  margin: 0 auto;
 
 }
 img.slideimg {
 
-  max-width: 700px;
-  max-height: 700px;
+  max-width: 100%;
+  max-height: 100%;
   border-radius: 5px;
 
+}
 
+.smImgs{
+  width: 75%;
+  margin: 0 auto;
 }
 
 /* Store Styles */

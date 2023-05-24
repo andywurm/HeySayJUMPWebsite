@@ -1,78 +1,108 @@
 <!doctype html>
 <html>
-  <head>
 
-      <meta charset="utf-8" />
-      <title>Hey!Say!JUMP!</title>
+<head>
 
-  </head>
-  <body>
+  <meta charset="utf-8" />
+  <title>Hey!Say!JUMP</title>
 
-    <header>
-      <img src="./images/hsj_banner.jpg" alt="Hey Say JUMP" class="banner"/>
-      <link href="hsj_styles.css" rel="stylesheet">
+</head>
 
-    </header>
+<body>
 
-      <nav>
-        <ul>
-          <li> <a href="Home.html"> Home </a> </li>
-          <li> <a href="Shows.html"> Shows </a> </li>
-          <li> <a href="Music.html"> Music </a> </li>
-          <li> <a href="Calendar.html"> Calendar </a> </li>
-          <li> <a href="Gallery.html"> Gallery </a> </li>
-          <li> <a href="Store.html"> Store </a> </li>
-        </ul>
-      </nav>
+  <header>
+    <!-- <div class="bannerContainer"><img src="./images/hsj_banner.jpg" alt="Hey Say JUMP" class="banner" /></div> -->
+    <link href="hsj_styles.css" rel="stylesheet">
+  </header>
+
+  <br/>
+  
+  <nav class="navbar">
+    <ul>
+      <li class="navItem"> <a href="Home.html"> Home </a> </li>
+      <!-- <li> <a href="Shows.html"> Shows </a> </li> -->
+      <li class="navItem"> <a href="Music.html"> Music </a> </li>
+      <li class="navItem"> <a href="Calendar.html"> Calendar </a> </li>
+      <li class="navItem"> <a href="Gallery.html"> Gallery </a> </li>
+      <li class="navItem"> <a href="Store.html"> Store </a> </li>
+    </ul>
+  </nav>
+
+  <div class="homeContainer">
+
+    <!-- <article> -->
+
+    <div class="intro">
+
+      <h1 class="hsjName"><em>Hey! Say! JUMP</em></h1>
+
+      <div class="group">
+        <img class="grpPic" src="./images/Group.png" />
+      </div>
+
+    </div>
+
+    <table class="tableCards">
+
+      <tr>
+        <td> <img src="./images/Ryosuke.jpg" alt="Yamada Ryosuke" class="members"> </td>
+        <td> <img src="./images/Daiki.jpg" alt="Arioka Daiki" class="members"> </td>
+        <td> <img src="./images/Hika.jpg" alt="Yaotome Hikaru" class="members"></td>
+        <td> <img src="./images/Yabu.jpg" alt="Yabu Kota" class="members"> </td>
+      </tr>
+      <tr>
+        <td class="names"> <a href="https://johnnyassociates.fandom.com/wiki/Yamada_Ryosuke"> Yamada Ryosuke </a>
+        </td>
+        <td class="names"><a href="https://johnnyassociates.fandom.com/wiki/Arioka_Daiki"> Arioka Daiki </a></td>
+        <td class="names"><a href="https://johnnyassociates.fandom.com/wiki/Yaotome_Hikaru"> Yaotome Hikaru</a></td>
+        <td class="names"><a href="https://johnnyassociates.fandom.com/wiki/Yabu_Kota"> Yabu Kota </a></td>
+      </tr>
+      <tr>
+        <td><img src="./images/Yuto.jpg" alt="Nakajima Yuto" class="members"> </td>
+        <td> <img src="./images/Inoo.jpg" alt="Inoo Kei" class="members"> </td>
+        <td> <img src="./images/Yuya.jpg" alt="Takaki Yuya" class="members"> </td>
+        <td> <img src="./images/Chinen.jpg" alt="Chinen Yuri" class="members"> </td>
+      </tr>
+      <tr>
+        <td class="names"><a href="https://johnnyassociates.fandom.com/wiki/Nakajima_Yuto"> Nakajima Yuto </a></td>
+        <td class="names"><a href="https://johnnyassociates.fandom.com/wiki/Inoo_Kei"> Inoo Kei </a></td>
+        <td class="names"> <a href="https://johnnyassociates.fandom.com/wiki/Takaki_Yuya">Takaki Yuya</a></td>
+        <td class="names"><a href="https://johnnyassociates.fandom.com/wiki/Chinen_Yuri">Chinen Yuri</a></td>
+      </tr>
+
+    </table>
 
 
-      <article>
+    <!-- </article> -->
 
-        <h1><em>Hey! Say! JUMP!</em></h1>
-        <p class="first"> Hey! Say! JUMP! is an eight member boy band under the talent agency <em>Johnny & Associates.</em> </p>
-        <p class="first">The group was assembled in 2007 and has been active ever since.</p>
-        <p class="first">The name Hey! Say! refers to the time period the members were born in (Heisei)
-        and JUMP is an acronym for Johnny's Ultra Music Power. </p>
+    <!-- <aside>
 
-        <h2>Our Members</h2>
+      <h3> Check Out Other Bands </h3>
 
-        <table>
-
-          <tr> <td> <img src="./images/Ryosuke.jpg" alt="Yamada Ryosuke" class="members"> </td> <td> <img src="./images/dai.jpeg" alt="Arioka Daiki" class="members"> </td> <td> <img src="./images/hika.jpeg" alt="Yaotome Hikaru" class="members"></td> <td> <img src="./images/yabu.jpg" alt="Yabu Kota" class="members"> </td>  </tr>
-          <tr> <td class="names"> <a href="https://johnnyassociates.fandom.com/wiki/Yamada_Ryosuke"> Yamada Ryosuke </a> </td> <td class="names"><a href="https://johnnyassociates.fandom.com/wiki/Arioka_Daiki"> Arioka Daiki </a></td> <td class="names"><a href="https://johnnyassociates.fandom.com/wiki/Yaotome_Hikaru"> Yaotome Hikaru</a></td> <td class="names"><a href="https://johnnyassociates.fandom.com/wiki/Yabu_Kota"> Yabu Kota </a></td>  </tr>
-          <tr> <td><img src="./images/yutti.jpg" alt="Nakajima Yuto" class="members"> </td> <td> <img src="./images/inoo.jpeg" alt="Inoo Kei" class="members"> </td> <td> <img src="./images/takaki.jpeg" alt="Takaki Yuya" class="members"> </td> <td> <img src="./images/chinen.jpg" alt="Chinen Yuri" class="members"> </td>  </tr>
-          <tr> <td class="names"><a href="https://johnnyassociates.fandom.com/wiki/Nakajima_Yuto"> Nakajima Yuto </a></td> <td class="names"><a href="https://johnnyassociates.fandom.com/wiki/Inoo_Kei"> Inoo Kei </a></td> <td class="names"> <a href="https://johnnyassociates.fandom.com/wiki/Takaki_Yuya">Takaki Yuya</a></td> <td class="names"><a href="https://johnnyassociates.fandom.com/wiki/Chinen_Yuri">Chinen Yuri</a></td> </tr>
-
-        </table>
-
-
-      </article>
-
-      <aside>
-
-          <h3> Check Out Other Bands </h3>
-
-          <ul>
-            <li class="links"><a href="https://johnnyassociates.fandom.com/wiki/Arashi"> Arashi </a></li>
-            <li class="links"><a href="https://johnnyassociates.fandom.com/wiki/SixTONES"> SixTones </a></li>
-            <li class="links"><a href="https://johnnyassociates.fandom.com/wiki/Mr._King_vs_Mr._Prince"> King & Prince </a></li>
-            <li class="links"><a href="https://en.wikipedia.org/wiki/Kanjani_Eight"> Kanjani Eight </a></li>
-            <li class="links"><a href="https://johnnyassociates.fandom.com/wiki/Sexy_Zone"> Sexy Zone </a></li>
-            <li class="links"><a href="https://johnnyassociates.fandom.com/wiki/Kis-My-Ft2"> Kis-My-Ft2 </a></li>
-            <li class="links"><a href="https://johnnyassociates.fandom.com/wiki/Johnny%27s_WEST"> Johnny's WEST </a></li>
-            <li class="links"><a href="https://en.wikipedia.org/wiki/Tokio_(band)"> TOKIO </a></li>
-            <li class="links"><a href="https://en.wikipedia.org/wiki/KinKi_Kids"> KinKi Kids </a></li>
-            <li class="links"><a href="https://johnnyassociates.fandom.com/wiki/Snow_Man"> Snow Man </a></li>
-            <li class="links"><a href="https://johnnyassociates.fandom.com/wiki/V6"> V6 </a></li>
-          </ul>
+      <ul>
+        <li class="links"><a href="https://johnnyassociates.fandom.com/wiki/Arashi"> Arashi </a></li>
+        <li class="links"><a href="https://johnnyassociates.fandom.com/wiki/SixTONES"> SixTones </a></li>
+        <li class="links"><a href="https://johnnyassociates.fandom.com/wiki/Mr._King_vs_Mr._Prince"> King & Prince </a>
+        </li>
+        <li class="links"><a href="https://en.wikipedia.org/wiki/Kanjani_Eight"> Kanjani Eight </a></li>
+        <li class="links"><a href="https://johnnyassociates.fandom.com/wiki/Sexy_Zone"> Sexy Zone </a></li>
+        <li class="links"><a href="https://johnnyassociates.fandom.com/wiki/Kis-My-Ft2"> Kis-My-Ft2 </a></li>
+        <li class="links"><a href="https://johnnyassociates.fandom.com/wiki/Johnny%27s_WEST"> Johnny's WEST </a></li>
+        <li class="links"><a href="https://en.wikipedia.org/wiki/Tokio_(band)"> TOKIO </a></li>
+        <li class="links"><a href="https://en.wikipedia.org/wiki/KinKi_Kids"> KinKi Kids </a></li>
+        <li class="links"><a href="https://johnnyassociates.fandom.com/wiki/Snow_Man"> Snow Man </a></li>
+        <li class="links"><a href="https://johnnyassociates.fandom.com/wiki/V6"> V6 </a></li>
+      </ul>
 
 
-      </aside>
+    </aside> -->
 
+  </div>
 
-    <footer>
-        2021 &copy; All Rights Reserved. Johnny's & Associates
-    </footer>
+  <footer>
+    2021 &copy; All Rights Reserved. Johnny's & Associates
+  </footer>
 
-  </body>
+</body>
+
 </html>
